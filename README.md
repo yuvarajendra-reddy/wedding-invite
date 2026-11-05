@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="bg/og-image.jpg" alt="Dr. Yuvarajendra & Dr. Madhura" width="720">
+<img src="bg/og-preview-v2.jpg" alt="Dr. Yuvarajendra & Dr. Madhura" width="720">
 
 # Dr. Yuvarajendra & Dr. Madhura
 
