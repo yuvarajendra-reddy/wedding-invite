@@ -6,7 +6,7 @@
 
 **An interactive wedding invitation · Bengaluru · 10–16 December 2026**
 
-[**Open the invitation →**](https://YOUR-GITHUB-USERNAME.github.io/YOUR-REPO-NAME/)
+[**Open the invitation →**](https://yuvarajendra-reddy.github.io/wedding-invite/)
 
 <br>
 
@@ -83,7 +83,6 @@ To preview locally, open `index.html` in a browser. For the full experience, inc
 python3 -m http.server 8000   # then visit http://localhost:8000
 ```
 
-To host it, enable **Settings → Pages → Deploy from a branch → `main` / root**. Replace `YOUR-GITHUB-USERNAME` and `YOUR-REPO-NAME` in `index.html` (the `og:url` and `og:image` tags) and in the link at the top of this README.
 
 ## Credits
 
