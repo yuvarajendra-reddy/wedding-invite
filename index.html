@@ -4,18 +4,18 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <meta name="theme-color" content="#f4f2ec">
-<meta name="description" content="Together with our families, we request the pleasure of your company. Muhurtham on Friday, 11 December 2026 at Ebisu Palace, Bengaluru.">
+<meta name="description" content="Wedding Invitation · Muhurtham on Friday, 11th December 2026 · EBISU Convention Center, Bengaluru">
 <!-- WhatsApp / social preview. Replace BOTH placeholder parts of the URL below with your GitHub Pages address. -->
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Yuvarajendra &amp; Madhura">
-<meta property="og:title" content="Dr. Yuvarajendra &amp; Dr. Madhura · Wedding Invitation">
-<meta property="og:description" content="Muhurtham · Friday, 11 December 2026 · Ebisu Palace, Bengaluru. Tap to open your invitation.">
+<meta property="og:title" content="Dr. Yuvarajendra &amp; Dr. Madhura">
+<meta property="og:description" content="Wedding Invitation · Muhurtham on Friday, 11th December 2026 · EBISU Convention Center, Bengaluru">
 <meta property="og:url" content="https://yuvarajendra-reddy.github.io/wedding-invite/">
-<meta property="og:image" content="https://yuvarajendra-reddy.github.io/wedding-invite/bg/og-preview-v2.jpg">
+<meta property="og:image" content="https://yuvarajendra-reddy.github.io/wedding-invite/bg/og-preview-v4.jpg">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <meta property="og:image:type" content="image/jpeg">
-<meta property="og:image:secure_url" content="https://yuvarajendra-reddy.github.io/wedding-invite/bg/og-preview-v2.jpg">
+<meta property="og:image:secure_url" content="https://yuvarajendra-reddy.github.io/wedding-invite/bg/og-preview-v4.jpg">
 <meta property="og:image:alt" content="Illustrated portrait of Dr. Yuvarajendra and Dr. Madhura">
 <meta name="twitter:card" content="summary_large_image">
 <link rel="icon" href="bg/couple-logo.webp">
@@ -39,7 +39,7 @@
   --serif:"Cormorant Garamond","Garamond","Times New Roman",serif;
   --label:"Jost","Futura","Century Gothic",system-ui,sans-serif;
   /* type scale */
-  --fs-label:12px;--fs-small:15px;--fs-body:19.5px;--fs-h3:33px;--fs-h2:46px;
+  --fs-label:12px;--fs-small:15px;--fs-body:19.5px;--fs-h3:33px;--fs-h2:44px;
   --w:min(100vw,480px);
   color-scheme:light;
 }
@@ -215,7 +215,7 @@ p{margin:0}
 .card::before,.card::after,.card .c3,.card .c4{display:none}
 .page:not(.hero) .card{padding:4px 6px}
 /* event screens: larger type now that the quotes are gone */
-#p-reception .card h3,#p-muhurtham .card h3,#p-oota .card h3{font-size:44px}
+[data-t]:not(.lead){font-size:44px!important;line-height:1.1}
 #p-reception .card .sub,#p-muhurtham .card .sub,#p-oota .card .sub{font-size:13px}
 #p-reception .card .join,#p-muhurtham .card .join,#p-oota .card .join{font-size:13px}
 #p-reception .card .day,#p-muhurtham .card .day,#p-oota .card .day{font-size:24px;margin-top:4px}
@@ -240,6 +240,7 @@ p{margin:0}
 .scene.deep .ground{transform:translateY(56%)}
 .cp{transition:opacity .6s ease}
 .scene.deep .cp{opacity:0}
+.page.al{justify-content:flex-start}
 .page:not(.hero):not(#p-thanks){padding-bottom:max(84px,calc(var(--w) * .756 * .44 + 6px))}
 .veil{z-index:2}
 .ground{z-index:1}
@@ -402,7 +403,7 @@ p{margin:0}
   <!-- 2. INVITE + COUPLE -->
   <section class="page wrap" id="p-couple">
     <div class="invite">
-      <p class="lead">With our families, we invite you<br>to our wedding</p>
+      <p class="lead" data-t>With our families, we invite you<br>to our wedding</p>
       <div class="rule"></div>
     </div>
     <div class="couple">
@@ -429,7 +430,7 @@ p{margin:0}
 <path d="M8 16 L24 22 L32 36 L18 32Z" fill="#ecd595"/><path d="M56 16 L40 22 L32 36 L46 32Z" fill="#c9a24a"/>
 <path d="M2 30 L18 32 L32 36 L14 38Z" fill="#c9a24a"/><path d="M62 30 L46 32 L32 36 L50 38Z" fill="#94732a"/>
 <path d="M12 41 L52 41" stroke="#c9a24a" stroke-width="1.2"/></svg>
-    <h2>Save The Date</h2>
+    <h2 data-t>Save The Date</h2>
     <p class="label" style="color:var(--ink)">Counting down</p>
     <div class="rule"></div>
     <button class="reveal" id="reveal" type="button" aria-expanded="false" aria-controls="revealed">
@@ -450,11 +451,6 @@ p{margin:0}
 
   <!-- 4. EVENTS: RECEPTION -->
   <section class="page wrap" id="p-reception">
-    <div class="sec-head">
-      <h2>Events</h2>
-      <p class="label gold">The wedding celebrations</p>
-      <div class="rule"></div>
-    </div>
     <article class="card"><span class="c3"></span><span class="c4"></span>
       <div class="icon"><svg class="sym" viewBox="0 0 64 64" role="img" aria-label="Lit diya">
 <path d="M32 6 L37 18 L32 27 L27 18Z" fill="#f6cf6e"/><path d="M32 6 L37 18 L32 27Z" fill="#e9973a"/>
@@ -463,7 +459,7 @@ p{margin:0}
 <path d="M24 48 L40 48 L36 54 L28 54Z" fill="#94732a"/><path d="M20 56 L44 56 L42 59 L22 59Z" fill="#c9a24a"/>
 <path d="M32 27 L32 34" stroke="#94732a" stroke-width="1.2"/></svg></div>
       <p class="join">Join us</p>
-      <h3>Reception</h3>
+      <h3 data-t>Reception</h3>
       <p class="sub">Celebration &amp; dinner</p>
       <div class="mini"></div>
       <p class="day">Thursday, 10th December 2026</p>
@@ -488,7 +484,7 @@ p{margin:0}
 <path d="M12 38 L52 38" stroke="#c2333a" stroke-width="1.6"/><circle cx="32" cy="44" r="2.4" fill="#c2333a"/>
 <path d="M22 54 L42 54 L40 59 L24 59Z" fill="#94732a"/></svg></div>
       <p class="join">Join us</p>
-      <h3>Muhurtham</h3>
+      <h3 data-t>Muhurtham</h3>
       <p class="sub">Auspicious wedding ceremony</p>
       <div class="mini"></div>
       <p class="day">Friday, 11th December 2026</p>
@@ -511,7 +507,7 @@ p{margin:0}
 <circle cx="28" cy="40" r="3" fill="#f2f0e6"/><circle cx="38" cy="41" r="2.6" fill="#c2333a"/>
 <path d="M14 55 L50 55" stroke="#c9a24a" stroke-width="1.4"/></svg></div>
       <p class="join">Join us</p>
-      <h3>Bheegara Oota</h3>
+      <h3 data-t>Bheegara Oota</h3>
       <p class="sub">Grand wedding feast</p>
       <div class="mini"></div>
       <p class="day">Wednesday, 16th December 2026</p>
@@ -534,7 +530,7 @@ p{margin:0}
 <path d="M12 38 L52 38 L52 52 L12 52Z" fill="#c9a24a"/><path d="M12 38 L32 38 L32 52 L12 52Z" fill="#ecd595"/>
 <path d="M28 44 Q32 38 36 44 L36 52 L28 52Z" fill="#94732a"/><path d="M8 53 L56 53" stroke="#94732a" stroke-width="1.4"/></svg></div>
       <p class="join">Join us at</p>
-      <h3>The Venue</h3>
+      <h3 data-t>The Venue</h3>
       <p class="sub">EBISU Convention Center</p>
       <a class="photo" target="_blank" rel="noopener" href="https://www.google.com/maps?q=EBISU+Convention+Center,+Hegde+Nagar+Main+Road+Jakkur+Post,+Chokkanahalli+Plot+No+68/69,+State+Highway+104,+Hegde+Nagar+Rd,+opposite+Regal+Hospital,+Balaji+Layout,+Chokkanahalli,+Bengaluru,+Karnataka+560064&amp;ftid=0x3bae1994d679f199:0x196abe998e27ee49" aria-label="Open EBISU Convention Center in Google Maps">
         <svg class="palace" viewBox="-8 -22 316 230" aria-hidden="false" role="img" aria-label="Ebisu Palace, EBISU Convention Center">
@@ -590,6 +586,10 @@ p{margin:0}
   }
   function ui(){btn.classList.toggle('on',playing);btn.setAttribute('aria-pressed',playing);btn.setAttribute('aria-label',playing?'Pause music':'Play music');}
   btn.addEventListener('click',function(){setMusic(!playing)});
+  var wasPlaying=false;
+  function bgPause(){if(playing){wasPlaying=true;song.pause();playing=false;ui();}}
+  document.addEventListener('visibilitychange',function(){if(document.hidden)bgPause();else if(wasPlaying){wasPlaying=false;setMusic(true);}});
+  addEventListener('pagehide',bgPause);addEventListener('blur',function(){if(document.hidden)bgPause();});
 
   // ---- open the doors
   document.getElementById('openBtn').addEventListener('click',function(){
@@ -605,11 +605,17 @@ p{margin:0}
   var pages=[].slice.call(document.querySelectorAll('.page:not(.hero)'));
   pages.forEach(function(pg){var f=document.createElement('div');f.className='fit';
     [].slice.call(pg.childNodes).forEach(function(n){f.appendChild(n)});pg.appendChild(f);});
-  function fitAll(){pages.forEach(function(pg){
-    var f=pg.querySelector('.fit');f.style.zoom='';pg.classList.remove('tight');
+  // every inner screen puts its title at the same height; content shrinks only if it would run into the artwork
+  function fitAll(){var H=sheet.clientHeight,T=Math.max(140,Math.round(H*.2));
+    pages.forEach(function(pg){
+    var f=pg.querySelector('.fit'),tt=pg.querySelector('[data-t]');f.style.zoom='';pg.classList.remove('tight');pg.style.paddingTop='';
+    if(tt&&pg.id!=='p-thanks'){
+      pg.classList.add('al');var B=parseFloat(getComputedStyle(pg).paddingBottom),fr=f.getBoundingClientRect(),o=tt.getBoundingClientRect().top-fr.top,h=f.offsetHeight;
+      var z=Math.min(1,(H-B-T)/Math.max(1,h-o),o>0?(T-24)/o:1);z=Math.max(.7,z);
+      if(z<1)f.style.zoom=z.toFixed(3);pg.style.paddingTop=Math.max(16,T-o*z)+'px';return;}
     function room(){var cs=getComputedStyle(pg);return pg.clientHeight-parseFloat(cs.paddingTop)-parseFloat(cs.paddingBottom)}
     if(f.offsetHeight>room()){pg.classList.add('tight');}
-    var r=room(),h=f.offsetHeight;if(h>r&&h>0)f.style.zoom=Math.max(.7,r/h).toFixed(3);
+    var r=room(),h2=f.offsetHeight;if(h2>r&&h2>0)f.style.zoom=Math.max(.7,r/h2).toFixed(3);
   });}
   fitAll();addEventListener('resize',fitAll);if(document.fonts&&document.fonts.ready)document.fonts.ready.then(fitAll);
   window.fitAll=fitAll;
@@ -795,9 +801,7 @@ p{margin:0}
     var m=Math.abs(a.x||0)+Math.abs(a.y||0)+Math.abs(a.z||0),dm=Math.abs(m-lastMag);lastMag=m;
     if(dm>18){var now=Date.now();if(now-lastShake>400){lastShake=now;boost();}}}
   function enableShake(){
-    try{if(window.DeviceMotionEvent&&typeof DeviceMotionEvent.requestPermission==='function'){
-        DeviceMotionEvent.requestPermission().then(function(r){if(r==='granted')addEventListener('devicemotion',onMotion)}).catch(function(){});
-      }else if(window.DeviceMotionEvent){addEventListener('devicemotion',onMotion);}}catch(err){}
+    try{if(window.DeviceMotionEvent&&typeof DeviceMotionEvent.requestPermission!=='function'){addEventListener('devicemotion',onMotion);}}catch(err){}
   }
   window.__boost=boost;
   function startShower(kind){shKind=kind;drops=makeShower(kind);if(!shRaf){lastT=0;shRaf=requestAnimationFrame(shFrame);}}

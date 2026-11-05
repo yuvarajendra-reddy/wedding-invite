@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="bg/og-preview-v2.jpg" alt="Dr. Yuvarajendra & Dr. Madhura" width="720">
+<img src="bg/og-preview-v4.jpg" alt="Dr. Yuvarajendra & Dr. Madhura" width="720">
 
 # Dr. Yuvarajendra & Dr. Madhura
 
@@ -57,7 +57,7 @@ All three are at **EBISU Convention Center**, Hegde Nagar Main Road, Chokkanahal
 - **One screen per swipe:** every swipe lands cleanly on the next screen, and each screen resizes to fit small phones.
 - **A shower for every screen:** each screen has its own shower that keeps going while you stay, from rose petals and yellow akshate rice to firecrackers that only burst after the date is revealed.
 - **The feast game:** dishes hang on twisted ropes, slip below the title one by one, and get yanked back up.
-- **Shake your phone:** the shower on the current screen gets heavier for a few seconds.
+- **Shake your phone (Android):** the shower on the current screen gets heavier for a few seconds.
 - **Live countdown:** it counts down to the Muhurtham at 12:05 pm IST.
 - **Add to calendar:** each event adds to Google Calendar in one tap, or to Apple and Outlook calendars from a calendar file.
 - **Directions:** one tap opens EBISU Convention Center in Google Maps.
@@ -69,7 +69,7 @@ All three are at **EBISU Convention Center**, Hegde Nagar Main Road, Chokkanahal
 - About 1 MB in total, including the music, so it loads quickly on mobile data.
 - **Showers:** they are drawn on a single canvas. Every piece is pre-drawn once and only placed on screen each frame.
 - **Smooth on cheaper phones:** the page uses fewer pieces on low-end phones and thins the shower further if frames start to drop. In testing it holds 50–60 fps with the processor slowed to a quarter of its speed.
-- **Reduced motion:** the animations switch off for anyone whose phone is set to reduce motion.
+- **Music etiquette:** the song pauses when the invitation is closed, minimised or the phone locks, and resumes on return.
 
 ```
 index.html           the whole invitation
