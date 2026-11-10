@@ -237,7 +237,7 @@ p{margin:0}
 .veil{position:absolute;inset:0;background:radial-gradient(ellipse 90% 80% at 50% 50%,rgba(250,248,242,.92),rgba(250,248,242,.78) 70%,rgba(250,248,242,.6));opacity:0;transition:opacity .7s ease}
 .scene.deep .veil{opacity:0}
 .ground{transition:transform 1.1s cubic-bezier(.4,.1,.2,1)}
-.scene.deep .ground{transform:translateY(76%)}
+.scene.deep .ground{transform:translateY(26%)}
 .who.who2{margin-top:22px!important}
 #p-couple .person .lin{font-style:italic!important}
 /* floating quote bubbles: bottom fifth of the bride & groom screen */
@@ -254,7 +254,7 @@ p{margin:0}
 #p-couple .deg-in{display:block}
 .scene.thx .ground{transform:translateY(26%)}
 .thanks .mono{width:104px!important}
-.scene.deeper .ground{transform:translateY(90%)}
+.scene.deeper .ground{transform:translateY(26%)}
 #p-venue .card{gap:8px!important}
 #p-venue .rule{margin:6px auto 2px!important}
 #p-venue .photo{margin:2px 0 0!important}
@@ -262,7 +262,7 @@ p{margin:0}
 #p-venue .vaddr{margin-top:4px!important}
 #p-venue .btn{margin-top:10px!important}
 .cp{transition:opacity .6s ease}
-.scene.deep .cp{opacity:0}
+.scene.deep .cp{opacity:1}
 .page.al{justify-content:flex-start}
 
 .veil{z-index:2}
@@ -662,19 +662,16 @@ p{margin:0}
     var ar=arch.getBoundingClientRect(),ah=arch.offsetHeight,top0=ar.top-(ar.top>0?0:0);
     var strands=Math.round(top0+ah*(350/1200))+12,garland=Math.round(top0+ah*(108/1200))+8,gh=g.offsetHeight;
     var hero=document.getElementById('hero'),nm=document.querySelector('#hero .names');
-    var TT=nm?Math.round(nm.offsetParent.offsetTop+nm.offsetTop):strands;
-    return {H:H,T:TT,G:garland,deepB:Math.round(H-gh*(1-.76))-12,venB:Math.round(H-gh*(1-.90))-10,fullB:Math.round(H-gh*(1-.26))-10};}
+    var TT=nm?Math.round(nm.offsetParent.offsetTop+nm.offsetTop):strands;var gn=document.querySelector('#hero .ganesha');var TG=gn?Math.round(gn.offsetParent.offsetTop+gn.offsetTop):TT-90;
+    return {H:H,TG:TG,T:TT,G:garland,deepB:Math.round(H-gh*(1-.76))-12,venB:Math.round(H-gh*(1-.90))-10,fullB:Math.round(H-gh*(1-.26))-10};}
   function fitAll(){var A=safeArea(),H=A.H;
     pages.forEach(function(pg){
     var f=pg.querySelector('.fit'),tt=pg.querySelector('[data-t],[data-a]');f.style.zoom='';pg.classList.remove('tight');pg.style.paddingTop='';pg.style.paddingBottom='';
     var Tp=A.T;
-    if(tt&&pg.id!=='p-thanks'){
+    if(pg.id!=='p-thanks'){
       pg.classList.add('al');pg.style.paddingBottom='0px';
-      var fr=f.getBoundingClientRect(),o=tt.getBoundingClientRect().top-fr.top,h=f.offsetHeight;
-      var Bt=pg.id==='p-venue'?A.venB:A.deepB;var z=Math.min(1,(Bt-Tp)/Math.max(1,h-o),o>0?(Tp-A.G)/o:1);
-      if(z<1)f.style.zoom=z.toFixed(3);pg.style.paddingTop=Math.max(8,Tp-o*z)+'px';
-      if(pg.id==='p-couple'){var w=pg.querySelector('.who');window.__groomWho=Math.round(Tp+(w.getBoundingClientRect().top-tt.getBoundingClientRect().top));}
-      return;}
+      var h=f.offsetHeight,z=Math.min(1,(A.fullB-A.TG)/Math.max(1,h));
+      if(z<1)f.style.zoom=z.toFixed(3);pg.style.paddingTop=A.TG+'px';return;}
     // thank-you: centred between the top garland and the temple and banana tree
     pg.classList.add('al');pg.style.paddingBottom='0px';
     var h2=f.offsetHeight,room=A.fullB-A.G,z2=Math.min(1,room/Math.max(1,h2));
