@@ -1,0 +1,14 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Madhura Yuvarajendra Wedding//EN
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:reception-2026@madhura-yuvarajendra
+DTSTAMP:20261104T000000Z
+DTSTART:20261210T133000Z
+DTEND:20261210T170000Z
+SUMMARY:Reception · Dr. Yuvarajendra & Dr. Madhura
+LOCATION:Ebisu Palace\, EBISU Convention Center\, Hegde Nagar Main Road\, Chokkanahalli\, Bengaluru\, Karnataka 560064
+DESCRIPTION:Celebration and dinner\, from 7:00 pm.
+END:VEVENT
+END:VCALENDAR
